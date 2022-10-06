@@ -47,7 +47,7 @@ export const state: StateType = {
             title: 'Know Me More',
             h2: `Hi, I'm `,
             name: 'Davyd Smyk',
-            aboutMe: 'I\'m a developer with experience building SPAs using React/Redux/TypeScript/HTML&CSS/SCSS. I like to develop applications that bring real value to the end user. Now I am improving my skills in this area and expanding my knowledge with new technologies (Node.js). I spend my free time reading educational literature, as well as improving my English.',
+            aboutMe: 'I\'m a developer with experience building SPAs using React/Redux/TypeScript/HTML&CSS/SCSS. I like to develop applications that bring real value to the end user. Now I am improving my skills in this area and expanding my knowledge with new technologies. I spend my free time reading educational literature, as well as improving my English.',
             contacts: [
                 {title: 'Name:', info: 'Davyd Smyk'},
                 {title: 'Email:', info: 'smykdav@gmail.com'},
@@ -189,7 +189,7 @@ export const state: StateType = {
             headerLinks
         },
         mainComponent: {
-            h1: `Привіт`,
+            h1: `Привіт, я розробник`,
             arrSkills,
             location: 'Львів, Україна.',
             a1: 'Мої роботи',
