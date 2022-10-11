@@ -5,13 +5,13 @@ import tidoListImg from '../assets/image/Todolist.jpg';
 import LearningCardsImg from '../assets/image/LearningCards.png';
 
 const headerLinks: LinksType[] = [
-    {href: 'https://github.com/KAST1EL', svgName: 'GitHub'},
+    {href: 'https://github.com/KAST13L', svgName: 'GitHub'},
     {href: 'https://www.instagram.com/smykdav/', svgName: 'Instagram'},
     {href: 'https://www.linkedin.com/', svgName: 'Linkedin'},
 ]
 
 const contactsLinks: LinksType[] = [
-    {href: 'https://github.com/KAST1EL', svgName: 'GitHub'},
+    {href: 'https://github.com/KAST13L', svgName: 'GitHub'},
     {href: 'https://www.instagram.com/smykdav/', svgName: 'Instagram'},
     {href: 'https://www.linkedin.com/', svgName: 'Linkedin'},
     {href: 'https://www.codewars.com/users/KAST13L', svgName: 'CodeWars'},
@@ -137,19 +137,19 @@ export const state: StateType = {
                     title: 'Social Network',
                     img: SocialNetworkImg,
                     description: 'An online platform that is used for communication, dating, creating social relationships between people...',
-                    href: 'https://github.com/KAST1EL'
+                    href: 'https://github.com/KAST13L'
                 },
                 {
                     title: 'Todo list',
                     img: tidoListImg,
                     description: 'A list of things you need to do or want to do. When a task is completed, it is usually crossed off the list...',
-                    href: 'https://github.com/KAST1EL'
+                    href: 'https://github.com/KAST13L'
                 },
                 {
                     title: 'Learning Cards',
                     img: LearningCardsImg,
                     description: 'Is a card bearing information, which is intended to be used as an aid in memorization. Flashcards are often used to memorize vocabulary, historical dates...',
-                    href: 'https://github.com/KAST1EL'
+                    href: 'https://github.com/KAST13L'
                 },
 
             ]
@@ -291,19 +291,19 @@ export const state: StateType = {
                     title: 'Social Network',
                     img: SocialNetworkImg,
                     description: 'Онлайн-платформа, яка використовується для спілкування, знайомств, створення соціальних відносин між людьми...',
-                    href: 'https://github.com/KAST1EL'
+                    href: 'https://github.com/KAST13L'
                 },
                 {
                     title: 'Todo list',
                     img: tidoListImg,
                     description: 'Список справ, які вам потрібно виконати або те, що ви хочете зробити. При виконанні завдання її зазвичай викреслюють зі списку...',
-                    href: 'https://github.com/KAST1EL'
+                    href: 'https://github.com/KAST13L'
                 },
                 {
                     title: 'Learning Cards',
                     img: LearningCardsImg,
                     description: 'Являє собою картку з інформацією, яка призначена для допомоги у запам\'ятовуванні. Картки часто використовуються для запам\'ятовування лексики, історичних дат...',
-                    href: 'https://github.com/KAST1EL'
+                    href: 'https://github.com/KAST13L'
                 },
             ]
         },
