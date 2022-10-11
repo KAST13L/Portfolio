@@ -19,7 +19,7 @@ const contactsLinks: LinksType[] = [
 
 const arrSkills: string[] = ['React', 'JavaScript', 'Redux', 'TypeScript', 'Formik', 'Axios', 'Material-ui', 'HTML/CSS', 'SASS/LESS', 'Storybook', 'Postman', 'Unit Testing', 'Git']
 
-const call: string = '+380 (50) 879-17-62'
+const call: string = '+380 (63) 395-37-46'
 
 export const state: StateType = {
     en: {
