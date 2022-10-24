@@ -16,8 +16,9 @@ export function Contacts(props: ContactsPropsType) {
     const [isDisabled, setIsDisabled] = useState<boolean>(false)
     const onSubmit = async (data: any) => {
         setIsDisabled(true)
+        // http://localhost:3001/sendMessage
         try {
-            const res = await axios.post('http://localhost:3001/sendMessage', data)
+            const res = await axios.post('https://gmail-nodej.herokuapp.com/sendMessage', data)
             alert('Message is sending!')
             form.reset();
         } catch (e) {
