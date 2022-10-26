@@ -168,7 +168,15 @@ export const state: StateType = {
             name: 'What is Your Name:',
             email: 'Your Email Address:',
             formMessage: 'How can I Help you?:',
-            button: 'Send'
+            button: 'Send',
+            formError: {
+                nameError: 'Name is required.',
+                emailError: 'Email is required.',
+                messageError: 'This field is also required😅.',
+                buttonError: 'Fill in the field correctly.',
+                emailIncorrect: 'Email is incorrect😫.',
+                loading:'Loading...⏳'
+            }
 
         },
         footerComponent: {
@@ -321,7 +329,15 @@ export const state: StateType = {
             name: 'Ваше ім\'я:',
             email: 'Адрес електроної пошти:',
             formMessage: 'Чим я можу допомогти?:',
-            button: 'Відправити'
+            button: 'Відправити',
+            formError: {
+                nameError: ' Ім\'я обов\'язкове.',
+                emailError: ' Емейл обов\'язковий.',
+                messageError: ' Це поле також обов\'язкове 😅.',
+                buttonError: 'Поля повинні бути заповненні коректно.',
+                emailIncorrect: ' Емайл введений із помилками😫.',
+                loading: 'Загрузка...⏳'
+            }
         },
         footerComponent: {
             copyright: 'Copyright © 2022. Всі права захищені.',
@@ -425,6 +441,16 @@ export type ContactsComponentType = {
     email: string
     formMessage: string
     button: string
+    formError: FormErrorType
+}
+
+export type FormErrorType = {
+    nameError: string
+    emailError: string
+    messageError: string
+    buttonError: string
+    emailIncorrect: string
+    loading: string
 }
 
 export type FooterComponentType = {
