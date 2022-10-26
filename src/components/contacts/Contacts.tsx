@@ -59,7 +59,7 @@ export function Contacts(props: ContactsPropsType) {
                             <div>
                                 <label>{props.contactsComponent.email}  {errors.email && <span style={{height:'1px',color:'red'}}>{errors.email.message}</span>}</label>
                                 <input {...register('email', {
-                                    required: 'Email is required',
+                                    required: 'Email is required.',
                                     pattern: {
                                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
                                         message: 'Write correct email.'
