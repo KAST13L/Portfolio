@@ -53,7 +53,7 @@ export function Contacts(props: ContactsPropsType) {
                             <div>
                                 <label>{props.contactsComponent.name}  {errors.name && <span style={{height:'1px',color:'red'}}>{errors.name.message}</span>}</label>
                                 <input {...register("name", {
-                                    required: "Name is required"
+                                    required: "Name is required."
                                 })} />
                             </div>
                             <div>
@@ -62,14 +62,14 @@ export function Contacts(props: ContactsPropsType) {
                                     required: 'Email is required',
                                     pattern: {
                                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                                        message: 'Write correct email'
+                                        message: 'Write correct email.'
                                     }
                                 })}/>
                             </div>
                             <div>
                                 <label>{props.contactsComponent.formMessage}  {errors.message && <span style={{height:'1px',color:'red'}}>{errors.message.message}</span>}</label>
                                 <textarea {...register("message", {
-                                    required: 'Message is required'
+                                    required: 'This field is required.'
                                 })} ></textarea>
                             </div>
 
