@@ -17,7 +17,8 @@ export function Contacts(props: ContactsPropsType) {
             name:'',
             email:'',
             message:''
-        }
+        },
+        mode: 'onTouched'
     });
 
     const [isDisabled, setIsDisabled] = useState<boolean>(false)
@@ -50,13 +51,13 @@ export function Contacts(props: ContactsPropsType) {
                     <div className={styles.form}>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div>
-                                <label>{props.contactsComponent.name}</label>
+                                <label>{props.contactsComponent.name}  {errors.name && <span style={{height:'1px',color:'red'}}>{errors.name.message}</span>}</label>
                                 <input {...register("name", {
                                     required: "Name is required"
                                 })} />
                             </div>
                             <div>
-                                <label>{props.contactsComponent.email}</label>
+                                <label>{props.contactsComponent.email}  {errors.email && <span style={{height:'1px',color:'red'}}>{errors.email.message}</span>}</label>
                                 <input {...register('email', {
                                     required: 'Email is required',
                                     pattern: {
@@ -66,11 +67,12 @@ export function Contacts(props: ContactsPropsType) {
                                 })}/>
                             </div>
                             <div>
-                                <label>{props.contactsComponent.formMessage}</label>
+                                <label>{props.contactsComponent.formMessage}  {errors.message && <span style={{height:'1px',color:'red'}}>{errors.message.message}</span>}</label>
                                 <textarea {...register("message", {
                                     required: 'Message is required'
                                 })} ></textarea>
                             </div>
+
                             <div>
                                 <button disabled={isDisabled} style={{width:'170px'}}  type={'submit'}>{ isDisabled ? 'loading...' : props.contactsComponent.button} &#9658;</button>
                             </div>
