@@ -19,7 +19,8 @@ const contactsLinks: LinksType[] = [
 
 const arrSkills: string[] = ['React', 'JavaScript', 'Redux', 'TypeScript', 'Formik', 'Axios', 'Material-ui', 'HTML/CSS', 'SASS/LESS', 'Storybook', 'Postman', 'Unit Testing', 'Git']
 
-const call: string = '+380 (63) 395-37-46'
+const callLife: string = '+380 (63) 395-37-46'
+const callVodafone: string = '+380 (50) 879-17-62'
 
 export const state: StateType = {
     en: {
@@ -163,7 +164,8 @@ export const state: StateType = {
             title: 'Let\'s get in touch',
             p: 'Please share as much info, as possible so we can get the most out of our first catch-up. I will be glad to work with you if my skills and experience suit you. Willing to talk over the phone or in person.',
             h3: 'Call:',
-            call,
+            callVodafone,
+            callLife,
             contactsLinks,
             name: 'What is Your Name:',
             email: 'Your Email Address:',
@@ -324,7 +326,8 @@ export const state: StateType = {
             title: 'Контакти',
             p: 'Будь ласка, поділіться якомога більшою кількістю інформації, щоб я міг отримати максимальну віддачу від нашої першої зустрічі. Радий працюватиму з вами, якщо мої навички та досвід підійдуть вам. Готовий поспілкуватися по телефону чи особисто.',
             h3: 'Тел:',
-            call,
+            callVodafone,
+            callLife,
             contactsLinks,
             name: 'Ваше ім\'я:',
             email: 'Адрес електроної пошти:',
@@ -435,7 +438,8 @@ export type ContactsComponentType = {
     title: string
     p: string
     h3: string
-    call: string
+    callVodafone: string
+    callLife: string
     contactsLinks: LinksType[]
     name: string
     email: string

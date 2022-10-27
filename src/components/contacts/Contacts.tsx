@@ -48,7 +48,8 @@ export function Contacts(props: ContactsPropsType) {
                     <div className={styles.info}>
                         <p className={styles.text}>{props.contactsComponent.p}</p>
                         <h3>{props.contactsComponent.h3}</h3>
-                        <p className={styles.tel}>{props.contactsComponent.call}</p>
+                        <p className={styles.tel}>{props.contactsComponent.callLife}</p><br/>
+                        <p className={styles.tel}>{props.contactsComponent.callVodafone}</p><br/>
                         <div>
                             <Links links={props.contactsComponent.contactsLinks}/>
                         </div>
