@@ -92,7 +92,7 @@ export function Contacts(props: ContactsPropsType) {
                                             : status === 'loading'
                                                 ? <span
                                                     style={{color: 'green'}}>{props.contactsComponent.formError.loading}</span>
-                                                : props.contactsComponent.button + ' ▶'
+                                                : props.contactsComponent.button + ' ▶ '
                                     }
                                 </button>
                             </div>
