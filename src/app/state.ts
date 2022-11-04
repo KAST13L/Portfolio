@@ -135,22 +135,22 @@ export const state: StateType = {
             title: 'Some of my most recent projects',
             projects: [
                 {
-                    title: 'Social Network',
-                    img: SocialNetworkImg,
-                    description: 'An online platform that is used for communication, dating, creating social relationships between people...',
-                    href: 'https://github.com/KAST13L'
-                },
-                {
                     title: 'Todo list',
                     img: tidoListImg,
                     description: 'A list of things you need to do or want to do. When a task is completed, it is usually crossed off the list...',
-                    href: 'https://github.com/KAST13L'
+                    href: 'https://kast13l.github.io/todolist'
                 },
                 {
                     title: 'Learning Cards',
                     img: LearningCardsImg,
                     description: 'Is a card bearing information, which is intended to be used as an aid in memorization. Flashcards are often used to memorize vocabulary, historical dates...',
-                    href: 'https://github.com/KAST13L'
+                    href: 'https://kast13l.github.io/cards-2.0'
+                },
+                {
+                    title: 'Social Network',
+                    img: SocialNetworkImg,
+                    description: 'An online platform that is used for communication, dating, creating social relationships between people...',
+                    href: 'https://kast13l.github.io/profile'
                 },
 
             ]
@@ -298,22 +298,22 @@ export const state: StateType = {
             span: 'Портфоліо',
             projects: [
                 {
-                    title: 'Social Network',
-                    img: SocialNetworkImg,
-                    description: 'Онлайн-платформа, яка використовується для спілкування, знайомств, створення соціальних відносин між людьми...',
-                    href: 'https://github.com/KAST13L'
-                },
-                {
                     title: 'Todo list',
                     img: tidoListImg,
                     description: 'Список справ, які вам потрібно виконати або те, що ви хочете зробити. При виконанні завдання її зазвичай викреслюють зі списку...',
-                    href: 'https://github.com/KAST13L'
+                    href: 'https://kast13l.github.io/todolist'
                 },
                 {
                     title: 'Learning Cards',
                     img: LearningCardsImg,
                     description: 'Являє собою картку з інформацією, яка призначена для допомоги у запам\'ятовуванні. Картки часто використовуються для запам\'ятовування лексики, історичних дат...',
-                    href: 'https://github.com/KAST13L'
+                    href: 'https://kast13l.github.io/cards-2.0'
+                },
+                {
+                    title: 'Social Network',
+                    img: SocialNetworkImg,
+                    description: 'Онлайн-платформа, яка використовується для спілкування, знайомств, створення соціальних відносин між людьми...',
+                    href: 'https://kast13l.github.io/samurai-way-main'
                 },
             ]
         },
