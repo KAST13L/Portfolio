@@ -7,13 +7,13 @@ import LearningCardsImg from '../assets/image/LearningCards.png';
 const headerLinks: LinksType[] = [
     {href: 'https://github.com/KAST13L', svgName: 'GitHub'},
     {href: 'https://www.instagram.com/smykdav/', svgName: 'Instagram'},
-    {href: 'https://www.linkedin.com/', svgName: 'Linkedin'},
+    {href: 'https://www.linkedin.com/in/davyd-smyk-37a84920b/', svgName: 'Linkedin'},
 ]
 
 const contactsLinks: LinksType[] = [
     {href: 'https://github.com/KAST13L', svgName: 'GitHub'},
     {href: 'https://www.instagram.com/smykdav/', svgName: 'Instagram'},
-    {href: 'https://www.linkedin.com/', svgName: 'Linkedin'},
+    {href: 'https://www.linkedin.com/in/davyd-smyk-37a84920b/', svgName: 'Linkedin'},
     {href: 'https://www.codewars.com/users/KAST13L', svgName: 'CodeWars'},
 ]
 
@@ -150,7 +150,7 @@ export const state: StateType = {
                     title: 'Social Network',
                     img: SocialNetworkImg,
                     description: 'An online platform that is used for communication, dating, creating social relationships between people...',
-                    href: 'https://kast13l.github.io/profile'
+                    href: 'https://kast13l.github.io/samurai-way-main/'
                 },
 
             ]
@@ -313,7 +313,7 @@ export const state: StateType = {
                     title: 'Social Network',
                     img: SocialNetworkImg,
                     description: 'Онлайн-платформа, яка використовується для спілкування, знайомств, створення соціальних відносин між людьми...',
-                    href: 'https://kast13l.github.io/samurai-way-main'
+                    href: 'https://kast13l.github.io/samurai-way-main/'
                 },
             ]
         },
