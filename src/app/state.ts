@@ -39,7 +39,7 @@ export const state: StateType = {
         mainComponent: {
             h1: `Hi, I'm a developer`,
             arrSkills,
-            location: 'based in Lviv, Ukraine.',
+            location: 'based in Brody, Lviv, Ukraine.',
             a1: 'View My Works',
             a2: 'Contact Me',
             photo: Davyd
@@ -54,7 +54,7 @@ export const state: StateType = {
                 {title: 'Name:', info: 'Davyd Smyk'},
                 {title: 'Email:', info: 'smykdav@gmail.com'},
                 {title: 'Date of birth:', info: '08 June, 1999'},
-                {title: 'From:', info: 'Lviv, Ukraine.'},
+                {title: 'From:', info: 'Brody, Lviv, Ukraine.'},
             ]
         },
         skillsComponent: {
@@ -202,7 +202,7 @@ export const state: StateType = {
         mainComponent: {
             h1: `Привіт, я розробник`,
             arrSkills,
-            location: 'Львів, Україна.',
+            location: 'м.Броди, Львів, Україна.',
             a1: 'Мої роботи',
             a2: 'Зв\'язатися із мною',
             photo: Davyd
@@ -217,7 +217,7 @@ export const state: StateType = {
                 {title: 'І\'мя:', info: 'Давид Смик'},
                 {title: 'Email:', info: 'smykdav@gmail.com'},
                 {title: 'Дата народження:', info: '08.06.1999'},
-                {title: 'Місцезнаходження:', info: 'Львів, Україна.'},
+                {title: 'Місцезнаходження:', info: 'м.Броди, Львів, Україна.'},
             ]
         },
         skillsComponent: {
