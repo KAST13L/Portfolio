@@ -3,6 +3,7 @@ import bgImg from '../assets/image/intro-bg-2.jpg'
 import SocialNetworkImg from '../assets/image/SocialNetwork.jpg'
 import tidoListImg from '../assets/image/Todolist.jpg';
 import LearningCardsImg from '../assets/image/LearningCards.png';
+import Davyd from '../assets/image/Davyd.jpg'
 
 const headerLinks: LinksType[] = [
     {href: 'https://github.com/KAST13L', svgName: 'GitHub'},
@@ -41,7 +42,7 @@ export const state: StateType = {
             location: 'based in Lviv, Ukraine.',
             a1: 'View My Works',
             a2: 'Contact Me',
-            photo: 'https://th-thumbnailer.cdn-si-edu.com/qgJ75SrDxQDP3v84BCujl7QRJDE=/fit-in/1600x0/filters:focal(530x193:531x194)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/9a/c6/9ac678fc-5f74-4c6f-9e1f-1effe9b2e1b0/01-star-power-carl-sagan.jpg'
+            photo: Davyd
         },
         aboutMeComponent: {
             span: 'About Me',
@@ -204,7 +205,7 @@ export const state: StateType = {
             location: 'Львів, Україна.',
             a1: 'Мої роботи',
             a2: 'Зв\'язатися із мною',
-            photo: 'https://th-thumbnailer.cdn-si-edu.com/qgJ75SrDxQDP3v84BCujl7QRJDE=/fit-in/1600x0/filters:focal(530x193:531x194)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/9a/c6/9ac678fc-5f74-4c6f-9e1f-1effe9b2e1b0/01-star-power-carl-sagan.jpg' // need download real photo
+            photo: Davyd
         },
         aboutMeComponent: {
             span: 'Про мене',
