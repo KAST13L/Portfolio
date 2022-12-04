@@ -30,7 +30,7 @@ export function Contacts(props: ContactsPropsType) {
     const onSubmit = async (data: any) => {
         setStatus('loading')
         try {
-            const res = await axios.post('https://gmail-nodej.herokuapp.com/sendMessage', data)
+            const res = await axios.post('https://gmail-nodejs-rho.vercel.app/sendMessage', data)
             setSuccess('Message is sending!')
             form.reset();
         } catch (e) {
