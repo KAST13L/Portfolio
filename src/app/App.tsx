@@ -13,23 +13,33 @@ import {AboutMe} from "../components/aboutMe/AboutMe";
 function App() {
 
     const [language, setLanguage] = useState<LanguageType>('en')
+    const {
+        headerComponent,
+        mainComponent,
+        aboutMeComponent,
+        skillsComponent,
+        contactsComponent,
+        projectsComponent,
+        footerComponent,
+        distantWorkComponent
+    } = state[language]
 
     return (
         <div className="App">
             <Header
-                headerComponent={state[language].headerComponent}
+                headerComponent={headerComponent}
                 callback={setLanguage}
                 language={language}
             />
-            <Main mainComponent={state[language].mainComponent}/>
-            <AboutMe aboutMeComponent={state[language].aboutMeComponent}/>
-            <Skills skillsComponent={state[language].skillsComponent}/>
+            <Main mainComponent={mainComponent}/>
+            <AboutMe aboutMeComponent={aboutMeComponent}/>
+            <Skills skillsComponent={skillsComponent}/>
             <div id={'projects'}>
-                <MyProjects projectsComponent={state[language].projectsComponent}/>
-                <DistantWork distantWorkComponent={state[language].distantWorkComponent}/>
+                <MyProjects projectsComponent={projectsComponent}/>
+                <DistantWork distantWorkComponent={distantWorkComponent}/>
             </div>
-            <Contacts contactsComponent={state[language].contactsComponent}/>
-            <Footer footerComponent={state[language].footerComponent}/>
+            <Contacts contactsComponent={contactsComponent}/>
+            <Footer footerComponent={footerComponent}/>
         </div>
     );
 }
