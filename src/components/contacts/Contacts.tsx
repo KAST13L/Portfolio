@@ -13,6 +13,8 @@ type ContactsPropsType = {
 
 export function Contacts(props: ContactsPropsType) {
 
+    const {contactsComponent} = props
+
     const {register, handleSubmit, formState: {errors}, ...form} = useForm({
         defaultValues: {
             name: '',
@@ -31,7 +33,9 @@ export function Contacts(props: ContactsPropsType) {
         setStatus('loading')
         try {
             const res = await axios.post('https://gmail-nodejs-xkaz-k28hw8pi7-kast13l.vercel.app/sendMessage', data)
-            setSuccess('Message is sending!')
+            if (res) {
+            }
+            setSuccess('Message is sending! Thank you! Ти солоденький пиріжечок❤!')
             form.reset();
         } catch (e) {
             setError(String(e))
@@ -43,43 +47,54 @@ export function Contacts(props: ContactsPropsType) {
     return (
         <div className={styles.contactsBlock} id={'contacts'}>
             <div className={styles.contactsContainer}>
-                <Title h2={props.contactsComponent.title}/>
+                <Title h2={contactsComponent.title}/>
                 <div className={styles.formInfo}>
                     <div className={styles.info}>
-                        <p className={styles.text}>{props.contactsComponent.p}</p>
-                        <h3>{props.contactsComponent.h3}</h3>
-                        <p className={styles.tel}>{props.contactsComponent.callLife}</p>
-                        <p className={styles.tel}>{props.contactsComponent.callVodafone}</p>
+                        <p className={styles.text}>{contactsComponent.p}</p>
+                        <h3>{contactsComponent.h3}</h3>
+                        <p className={styles.tel}>{contactsComponent.callLife}</p>
+                        <p className={styles.tel}>{contactsComponent.callVodafone}</p>
                         <div>
-                            <Links links={props.contactsComponent.contactsLinks}/>
+                            <Links links={contactsComponent.contactsLinks}/>
                         </div>
                     </div>
-                    <SnackBar error={error} success={success} setError={setError} setSuccess={setSuccess}/>
+
+                    <SnackBar error={error} success={success} setError={setError}
+                              setSuccess={setSuccess}/>
                     <div className={styles.form}>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div>
-                                <label>{props.contactsComponent.name} {errors.name &&
-                                    <span style={{height: '1px', color: 'red'}}>{errors.name.message}</span>}</label>
+                                <label>{contactsComponent.name} {errors.name &&
+                                    <span style={{
+                                        height: '1px',
+                                        color: 'red'
+                                    }}>{errors.name.message}</span>}</label>
                                 <input {...register("name", {
-                                    required: props.contactsComponent.formError.nameError
+                                    required: contactsComponent.formError.nameError
                                 })} />
                             </div>
                             <div>
-                                <label>{props.contactsComponent.email} {errors.email &&
-                                    <span style={{height: '1px', color: 'red'}}>{errors.email.message}</span>}</label>
+                                <label>{contactsComponent.email} {errors.email &&
+                                    <span style={{
+                                        height: '1px',
+                                        color: 'red'
+                                    }}>{errors.email.message}</span>}</label>
                                 <input {...register('email', {
-                                    required: props.contactsComponent.formError.emailError,
+                                    required: contactsComponent.formError.emailError,
                                     pattern: {
                                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                                        message: props.contactsComponent.formError.emailIncorrect
+                                        message: contactsComponent.formError.emailIncorrect
                                     }
                                 })}/>
                             </div>
                             <div>
-                                <label>{props.contactsComponent.formMessage} {errors.message &&
-                                    <span style={{height: '1px', color: 'red'}}>{errors.message.message}</span>}</label>
+                                <label>{contactsComponent.formMessage} {errors.message &&
+                                    <span style={{
+                                        height: '1px',
+                                        color: 'red'
+                                    }}>{errors.message.message}</span>}</label>
                                 <textarea {...register("message", {
-                                    required: props.contactsComponent.formError.messageError
+                                    required: contactsComponent.formError.messageError
                                 })} ></textarea>
                             </div>
 
@@ -88,11 +103,11 @@ export function Contacts(props: ContactsPropsType) {
                                     {
                                         errors.email || errors.name || errors.message
                                             ? <span
-                                                style={{color: 'red'}}>{props.contactsComponent.formError.buttonError}</span>
+                                                style={{color: 'red'}}>{contactsComponent.formError.buttonError}</span>
                                             : status === 'loading'
                                                 ? <span
-                                                    style={{color: 'green'}}>{props.contactsComponent.formError.loading}</span>
-                                                : props.contactsComponent.button + ' ▶ '
+                                                    style={{color: 'green'}}>{contactsComponent.formError.loading}</span>
+                                                : contactsComponent.button + ' ▶ '
                                     }
                                 </button>
                             </div>
