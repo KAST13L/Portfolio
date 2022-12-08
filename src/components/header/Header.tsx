@@ -13,17 +13,19 @@ type HeaderPropsType = {
 }
 
 export function Header(props: HeaderPropsType) {
+    const {headerComponent, callback, language } = props
+
     return (
         <header className={styles.header}>
             <div className={styles.headerContainer}>
                 <a href={'#'} className={styles.logo}>
                     <SvgSelector svgName={"PortfolioSvg"}/>
                 </a>
-                <Nav nav={props.headerComponent.nav} menuName={props.headerComponent.menuName}/>
+                <Nav nav={headerComponent.nav} menuName={headerComponent.menuName}/>
                 <Links
-                    links={props.headerComponent.headerLinks}
-                    callback={props.callback}
-                    language={props.language}
+                    links={headerComponent.headerLinks}
+                    callback={callback}
+                    language={language}
                 />
             </div>
         </header>

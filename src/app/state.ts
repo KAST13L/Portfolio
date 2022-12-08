@@ -374,14 +374,12 @@ export type NavType = {
     href: HrefNavType
     navName: string
 }
-
 type HrefNavType = 'home' | 'skills' | 'projects' | 'contacts' | 'about'
 
 export type LinksType = {
     href: string
     svgName: LinksNameType
 }
-
 export type MainComponentType = {
     h1: string
     arrSkills: string[]
@@ -390,7 +388,6 @@ export type MainComponentType = {
     a2: string
     photo: string
 }
-
 export type AboutMeComponent = {
     span: string
     title: string
@@ -399,42 +396,35 @@ export type AboutMeComponent = {
     aboutMe: string
     contacts: ContactsType[]
 }
-
 type ContactsType = {
     title: string
     info: string
 }
-
 export type SkillsComponentsType = {
     span: string
     title: string
     skills: SkillType[]
 }
-
 type SkillType = {
     svgName: SkillsNameType
     description: string
 }
-
 export type ProjectsComponentsType = {
     span: string
     title: string
     projects: ProjectType[]
 }
-
 type ProjectType = {
     title: string
     img: string
     description: string
     href: string
 }
-
 export type DistantWorkComponentType = {
     title: string
     a: string
     bgImg: string
 }
-
 export type ContactsComponentType = {
     title: string
     p: string
@@ -448,7 +438,6 @@ export type ContactsComponentType = {
     button: string
     formError: FormErrorType
 }
-
 export type FormErrorType = {
     nameError: string
     emailError: string
@@ -457,7 +446,6 @@ export type FormErrorType = {
     emailIncorrect: string
     loading: string
 }
-
 export type FooterComponentType = {
     copyright: string
     designed: string
