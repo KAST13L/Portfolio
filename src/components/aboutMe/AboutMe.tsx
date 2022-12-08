@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './AboutMe.module.scss'
 import {Title} from "../../common/title/Title";
 import {AboutMeComponent} from "../../app/state";
-import Fade, {Flip, Hinge, Roll, Zoom} from "react-awesome-reveal";
+import Fade, {Roll} from "react-awesome-reveal";
 
 
 type AboutMePropsType = {
@@ -10,22 +10,25 @@ type AboutMePropsType = {
 }
 
 export function AboutMe(props: AboutMePropsType) {
+    const {aboutMeComponent} = props
     return (
         <div className={styles.aboutBlock} id={'about'}>
             <div className={styles.aboutContainer}>
                 <Roll>
-                <Title
-                    span={props.aboutMeComponent.span}
-                    h2={props.aboutMeComponent.title}
-                />
+                    <Title
+                        span={aboutMeComponent.span}
+                        h2={aboutMeComponent.title}
+                    />
                 </Roll>
                 <div className={styles.aboutMeInfo}>
                     <div className={styles.textInfo}>
-                        <Fade><h2>{props.aboutMeComponent.h2}<span>{props.aboutMeComponent.name}</span></h2></Fade>
-                        <p>{props.aboutMeComponent.aboutMe}</p>
+                        <Fade>
+                            <h2>{aboutMeComponent.h2}<span>{aboutMeComponent.name}</span>
+                            </h2></Fade>
+                        <p>{aboutMeComponent.aboutMe}</p>
                     </div>
                     <div className={styles.infoBlock}>
-                        {props.aboutMeComponent.contacts.map((el, index) => {
+                        {aboutMeComponent.contacts.map((el, index) => {
                             return (
                                 <div key={index} className={styles.block}>
                                     <p className={styles.title}>{el.title}</p>
