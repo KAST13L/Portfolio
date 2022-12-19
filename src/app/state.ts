@@ -1,10 +1,10 @@
 import {LinksNameType, SkillsNameType} from "../common/svgSelector/SvgSelector";
 import bgImg from '../assets/image/intro-bg-2.jpg'
 import SocialNetworkImg from '../assets/image/SocialNetwork.jpg'
-import Pizza from '../assets/image/food.jpg'
 import tidoListImg from '../assets/image/Todolist.jpg';
 import LearningCardsImg from '../assets/image/LearningCards.png';
 import Davyd from '../assets/image/Davyd.jpg'
+import Pizza from '../assets/image/Pizza.jpg'
 
 const headerLinks: LinksType[] = [
     {href: 'https://github.com/KAST13L', svgName: 'GitHub'},
@@ -156,7 +156,7 @@ export const state: StateType = {
                 },
                 {
                     title: 'Pizza Yolla',
-                    img: SocialNetworkImg,
+                    img: Pizza,
                     description: 'Online pizza ordering application. (Currently under development)',
                     href: 'https://kast13l.github.io/pizzayolla/'
                 },
