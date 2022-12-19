@@ -34,7 +34,7 @@ export function Contacts(props: ContactsPropsType) {
         try {
             const res = await axios.post('https://gmail-nodejs-xkaz-k28hw8pi7-kast13l.vercel.app/sendMessage', data)
             if (res) {}
-            setSuccess('Message is sending! Thank you! Ти солоденький пиріжечок❤!')
+            setSuccess('Message is sending! Thank you! Ти солоденький пиріжечок❤!!')
             form.reset();
         } catch (e) {
             setError(String(e))
