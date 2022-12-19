@@ -33,8 +33,7 @@ export function Contacts(props: ContactsPropsType) {
         setStatus('loading')
         try {
             const res = await axios.post('https://gmail-nodejs-xkaz-k28hw8pi7-kast13l.vercel.app/sendMessage', data)
-            if (res) {
-            }
+            if (res) {}
             setSuccess('Message is sending! Thank you! Ти солоденький пиріжечок❤!')
             form.reset();
         } catch (e) {
@@ -97,7 +96,6 @@ export function Contacts(props: ContactsPropsType) {
                                     required: contactsComponent.formError.messageError
                                 })} ></textarea>
                             </div>
-
                             <div>
                                 <button disabled={status === 'loading'} type={'submit'}>
                                     {
@@ -118,8 +116,5 @@ export function Contacts(props: ContactsPropsType) {
         </div>
     );
 }
-
-
-
 
 
