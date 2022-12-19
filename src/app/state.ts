@@ -1,6 +1,7 @@
 import {LinksNameType, SkillsNameType} from "../common/svgSelector/SvgSelector";
 import bgImg from '../assets/image/intro-bg-2.jpg'
 import SocialNetworkImg from '../assets/image/SocialNetwork.jpg'
+import Pizza from '../assets/image/food.jpg'
 import tidoListImg from '../assets/image/Todolist.jpg';
 import LearningCardsImg from '../assets/image/LearningCards.png';
 import Davyd from '../assets/image/Davyd.jpg'
@@ -152,6 +153,12 @@ export const state: StateType = {
                     img: SocialNetworkImg,
                     description: 'An online platform that is used for communication, dating, creating social relationships between people...',
                     href: 'https://kast13l.github.io/samurai-way-main/'
+                },
+                {
+                    title: 'Pizza Yolla',
+                    img: SocialNetworkImg,
+                    description: 'Online pizza ordering application. (Currently under development)',
+                    href: 'https://kast13l.github.io/pizzayolla/'
                 },
 
             ]
@@ -315,6 +322,12 @@ export const state: StateType = {
                     img: SocialNetworkImg,
                     description: 'Онлайн-платформа, яка використовується для спілкування, знайомств, створення соціальних відносин між людьми...',
                     href: 'https://kast13l.github.io/samurai-way-main/'
+                },
+                {
+                    title: 'Pizza Yolla',
+                    img: Pizza,
+                    description: 'Онлайн-застосунок для замовлення піци. (В процесі розробки)',
+                    href: 'https://kast13l.github.io/pizzayolla/'
                 },
             ]
         },
