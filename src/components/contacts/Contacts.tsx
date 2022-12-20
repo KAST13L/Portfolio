@@ -33,7 +33,8 @@ export function Contacts(props: ContactsPropsType) {
         setStatus('loading')
         try {
             const res = await axios.post('https://gmail-nodejs-xkaz-k28hw8pi7-kast13l.vercel.app/sendMessage', data)
-            if (res) {}
+            if (res) {
+            }
             setSuccess('Message is sending! Thank you! Ти солоденький пиріжечок❤!!')
             form.reset();
         } catch (e) {
@@ -51,8 +52,11 @@ export function Contacts(props: ContactsPropsType) {
                     <div className={styles.info}>
                         <p className={styles.text}>{contactsComponent.p}</p>
                         <h3>{contactsComponent.h3}</h3>
-                        <p className={styles.tel}>{contactsComponent.callLife}</p>
-                        <p className={styles.tel}>{contactsComponent.callVodafone}</p>
+                        <p className={styles.tel}><a
+                            href="tel:+380633953746">{contactsComponent.callLife}</a></p>
+                        <p className={styles.tel}><a
+                            href="tel:+380508791762">{contactsComponent.callVodafone}</a>
+                        </p>
                         <div>
                             <Links links={contactsComponent.contactsLinks}/>
                         </div>

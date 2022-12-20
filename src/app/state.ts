@@ -19,7 +19,7 @@ const contactsLinks: LinksType[] = [
     {href: 'https://www.codewars.com/users/KAST13L', svgName: 'CodeWars'},
 ]
 
-const arrSkills: string[] = ['React', 'JavaScript', 'Redux', 'TypeScript', 'Formik', 'Axios', 'Material-ui', 'HTML/CSS', 'SASS/LESS', 'Storybook', 'Postman', 'Unit Testing', 'Git']
+const arrSkills: string[] = ['React', 'JavaScript', 'Redux', 'TypeScript', 'Formik', 'Axios', 'Material-ui', 'Storybook', 'Postman', 'Unit Testing', 'Git']
 
 const callLife: string = '+380 (63) 395-37-46'
 const callVodafone: string = '+380 (50) 879-17-62'
@@ -50,7 +50,7 @@ export const state: StateType = {
             title: 'Know Me More',
             h2: `Hi, I'm `,
             name: 'Davyd Smyk',
-            aboutMe: 'I\'m a developer with experience building SPAs using React/Redux/RTK/Thunk /Saga/TypeScript/HTML&CSS/SCSS. I like to develop applications that bring real value to the end user. Now I am improving my skills in this area and expanding my knowledge with new technologies. I spend my free time reading educational literature, as well as improving my English.',
+            aboutMe: 'I\'m a developer with experience building SPAs using React/Redux/RTK/Thunk /Saga/TypeScript/Tailwind CSS/SCSS. I like to develop applications that bring real value to the end user. Now I am improving my skills in this area and expanding my knowledge with new technologies. I spend my free time reading educational literature, as well as improving my English. At the moment I am working on the development of a web application for the operation and management of a pizzeria.',
             contacts: [
                 {title: 'Name:', info: 'Davyd Smyk'},
                 {title: 'Email:', info: 'smykdav@gmail.com'},
@@ -219,7 +219,7 @@ export const state: StateType = {
             title: 'Дізнатися про мене більше',
             h2: 'Привіт, мене звати ',
             name: 'Давид Смик',
-            aboutMe: 'Я – розробник, маючий досвід створення SPA з використанням React/Redux/RTK/Thunk /Saga/TypeScript/HTML&CSS/SCSS. Мені подобається розробляти застосунки, які приносять реальну користь кінцевому користувачу. Зараз я покращую свої навички в цьому напрямку і розширюю знання новими технологіями. Вільний час проводжу за читанням навчальної літератури та поліпшенням англійської мови.',
+            aboutMe: 'Я – розробник, маючий досвід створення SPA з використанням React/Redux/RTK/Thunk /Saga/TypeScript/Tailwind CSS/SCSS. Мені подобається розробляти застосунки, які приносять реальну користь кінцевому користувачу. Зараз я покращую свої навички в цьому напрямку і розширюю знання новими технологіями. Вільний час проводжу за читанням навчальної літератури та поліпшенням англійської мови. На даний момент, я працюю над розробкою веб-застосунку для управління піцарією.',
             contacts: [
                 {title: 'І\'мя:', info: 'Давид Смик'},
                 {title: 'Email:', info: 'smykdav@gmail.com'},
