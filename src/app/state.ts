@@ -140,7 +140,7 @@ export const state: StateType = {
                     title: 'Todo list',
                     img: tidoListImg,
                     description: 'A list of things you need to do or want to do. When a task is completed, it is usually crossed off the list...',
-                    href: 'https://kast13l.github.io/todolist'
+                    href: 'https://kast13l.github.io/todolist/#/todolist'
                 },
                 {
                     title: 'Learning Cards',
@@ -309,7 +309,7 @@ export const state: StateType = {
                     title: 'Todo list',
                     img: tidoListImg,
                     description: 'Список справ, які вам потрібно виконати або те, що ви хочете зробити. При виконанні завдання її зазвичай викреслюють зі списку...',
-                    href: 'https://kast13l.github.io/todolist'
+                    href: 'https://kast13l.github.io/todolist/#/todolist'
                 },
                 {
                     title: 'Learning Cards',
