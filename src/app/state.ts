@@ -158,7 +158,7 @@ export const state: StateType = {
                     title: 'Pizza Yolla',
                     img: Pizza,
                     description: 'Online pizza ordering application. (Currently under development)',
-                    href: 'https://kast13l.github.io/pizzayolla/'
+                    href: 'https://pizzayolla.store/'
                 },
 
             ]
@@ -327,7 +327,7 @@ export const state: StateType = {
                     title: 'Pizza Yolla',
                     img: Pizza,
                     description: 'Онлайн-застосунок для замовлення піци. (В процесі розробки)',
-                    href: 'https://kast13l.github.io/pizzayolla/'
+                    href: 'https://pizzayolla.store/'
                 },
             ]
         },
