@@ -190,7 +190,7 @@ export const state: StateType = {
 
         },
         footerComponent: {
-            copyright: 'Copyright © 2022. All Rights Reserved.',
+            copyright: 'Copyright © 2023. All Rights Reserved.',
             designed: 'Developed by Davyd Smyk'
         }
     },
@@ -357,7 +357,7 @@ export const state: StateType = {
             }
         },
         footerComponent: {
-            copyright: 'Copyright © 2022. Всі права захищені.',
+            copyright: 'Copyright © 2023. Всі права захищені.',
             designed: 'Розробив Давид Смик'
         }
     },
