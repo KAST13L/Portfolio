@@ -51,12 +51,13 @@ export function Contacts(props: ContactsPropsType) {
                 <div className={styles.formInfo}>
                     <div className={styles.info}>
                         <p className={styles.text}>{contactsComponent.p}</p>
+                        <h3>{}</h3>
                         <h3>{contactsComponent.h3}</h3>
                         <p className={styles.tel}><a
-                            style={{textDecoration:'none', color:'black'}}
+                            style={{textDecoration: 'none', color: 'black'}}
                             href="tel:+380633953746">{contactsComponent.callLife}</a></p>
                         <p className={styles.tel}><a
-                            style={{textDecoration:'none', color:'black'}}
+                            style={{textDecoration: 'none', color: 'black'}}
                             href="tel:+380508791762">{contactsComponent.callVodafone}</a>
                         </p>
                         <div>

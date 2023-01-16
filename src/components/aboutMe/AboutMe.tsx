@@ -32,7 +32,11 @@ export function AboutMe(props: AboutMePropsType) {
                             return (
                                 <div key={index} className={styles.block}>
                                     <p className={styles.title}>{el.title}</p>
-                                    <p className={styles.info}>{el.info}</p>
+                                    <p className={styles.info}>{
+                                        el.info === aboutMeComponent.contacts[1].info
+                                            ? <a style={{color:'black'}} href={`mailto:${aboutMeComponent.contacts[1].info}`}>{el.info}</a>
+                                            : el.info
+                                    }</p>
                                 </div>
                             )
                         })}
