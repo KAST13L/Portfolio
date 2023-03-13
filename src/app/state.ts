@@ -3,6 +3,7 @@ import bgImg from '../assets/image/intro-bg-2.jpg'
 import SocialNetworkImg from '../assets/image/SocialNetwork.jpg'
 import tidoListImg from '../assets/image/Todolist.jpg';
 import LearningCardsImg from '../assets/image/LearningCards.png';
+import recommendMovies from '../assets/image/recommendMovies.jpg';
 import Davyd from '../assets/image/Davyd.jpg'
 import Pizza from '../assets/image/Pizza.jpg'
 
@@ -136,6 +137,12 @@ export const state: StateType = {
             span: 'Portfolio',
             title: 'Some of my most recent projects',
             projects: [
+                {
+                    title: 'Movies Recommendation',
+                    img: recommendMovies,
+                    description: 'An application that always shows up-to-date data about movies, including their popularity...',
+                    href: 'https://serene-island-94785.herokuapp.com/'
+                },
                 {
                     title: 'Todo list',
                     img: tidoListImg,
@@ -305,6 +312,12 @@ export const state: StateType = {
             title: 'Деякі із моїх останіх проєктів',
             span: 'Портфоліо',
             projects: [
+                {
+                    title: 'Movies Recommendation',
+                    img: recommendMovies,
+                    description: 'Застосунок для вибору і рекомендації сучасних фільмів в реальному часі...',
+                    href: 'https://serene-island-94785.herokuapp.com/'
+                },
                 {
                     title: 'Todo list',
                     img: tidoListImg,
