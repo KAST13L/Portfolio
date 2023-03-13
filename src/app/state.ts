@@ -1,11 +1,11 @@
 import {LinksNameType, SkillsNameType} from "../common/svgSelector/SvgSelector";
 import bgImg from '../assets/image/intro-bg-2.jpg'
-import SocialNetworkImg from '../assets/image/SocialNetwork.jpg'
-import tidoListImg from '../assets/image/Todolist.jpg';
-import LearningCardsImg from '../assets/image/LearningCards.png';
+import SocialNetworkImg from '../assets/image/SocialNet.jpg'
+import tidoListImg from '../assets/image/TodoImg.jpg';
+import LearningCardsImg from '../assets/image/learnCards.jpg';
 import recommendMovies from '../assets/image/recommendMovies.jpg';
 import Davyd from '../assets/image/Davyd.jpg'
-import Pizza from '../assets/image/Pizza.jpg'
+import Pizza from '../assets/image/heroPizza.jpg'
 
 const headerLinks: LinksType[] = [
     {href: 'https://github.com/KAST13L', svgName: 'GitHub'},
