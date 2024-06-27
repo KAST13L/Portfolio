@@ -30,7 +30,7 @@ export const state: StateType = {
         headerComponent: {
             menuName: 'Menu',
             nav: [
-                {href: 'home', navName: 'Home'},
+                {href: 'homeee', navName: 'Home'},
                 {href: 'about', navName: 'About'},
                 {href: 'skills', navName: 'Skills'},
                 {href: 'projects', navName: 'Portfolio'},
